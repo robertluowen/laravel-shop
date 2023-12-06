@@ -23,7 +23,8 @@
             "providers": [
                 "Robertluowen\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider",
                 "Robertluowen\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider",
-                "Robertluowen\\LaravelShop\\Extend\\Artisan\\ArtisanServiceProvider"
+                "Robertluowen\\LaravelShop\\Extend\\Artisan\\ArtisanServiceProvider",
+                "Robertluowen\\LaravelShop\\Data\\Goods\\Providers\\GoodsServiceProvider"
             ]
         }
     }

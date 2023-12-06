@@ -15,7 +15,7 @@ class MigrateMakeCommand extends Command
         {--realpath : Indicate any provided migration file paths are pre-resolved absolute paths}
         {--fullpath : Output the full path of the migration}';
 
-    protected $description = 'Create a new migration file';
+    protected $description = '这是给laravel-shop创建迁移文件的';
 
     // php artisan shop-make:migration createTable --path=Data\Goods
     protected function getMigrationPath()

@@ -11,8 +11,15 @@ class SeederMakeCommand extends Commad
 
     protected $name = 'shop-make:seeder';
 
+    protected $description = '这是给laravel-shop创建批量生成数据文件的';
+
+    protected $defaultNamespace = '\Database\Seeders';
+
     protected function getPath($name)
     {
-        return $this->packagePath.'/'.$this->getPackageInput().'/Database/seeds/'.$name.'.php';
+        $inputName = trim($this->argument('name'));
+        return $this->packagePath.'/'.$this->getPackageInput().'/Database/Seeders/'.$inputName.'.php';
     }
+
+
 }
