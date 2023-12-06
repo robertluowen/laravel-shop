@@ -104,7 +104,7 @@ class ShopServiceProvider extends ServiceProvider
     private function registerRoutes()
     {
         Route::group($this->routeConfiguration(), function () {
-            $this->loadRoutesFrom(__DIR__ . '\..\Routes\shop.php');
+            $this->loadRoutesFrom(__DIR__ . '/../Routes/shop.php');
         });
     }
 

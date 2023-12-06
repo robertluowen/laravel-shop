@@ -122,7 +122,7 @@ class MemberServiceProvider extends ServiceProvider
     private function registerRoutes()
     {
         Route::group($this->routeConfiguration(), function () {
-            $this->loadRoutesFrom(__DIR__ . '\..\Http\routes.php');
+            $this->loadRoutesFrom(__DIR__ . '/../Http/routes.php');
         });
     }
 
