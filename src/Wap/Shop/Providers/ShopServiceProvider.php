@@ -43,7 +43,7 @@ class ShopServiceProvider extends ServiceProvider
 //        $this->mergeConfigFrom(__DIR__ . '/../Config/shop.php', 'wap.shop');
         //注册中间件
 //        $this->registerRouteMiddleware();
-        //php artisan vendor:publish --provider=" Robertluowen\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
+        //php artisan vendor:publish --provider="Robertluowen\LaravelShop\Wap\Shop\Providers\ShopServiceProvider"
         $this->registerPublishing();
 
 
