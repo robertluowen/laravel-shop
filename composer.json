@@ -10,9 +10,6 @@
     ],
     "require": {
     },
-    "replace": {
-        "robertluowen/laravel-shop": "self.version"
-    },
     "autoload": {
         "psr-4": {
             "Robertluowen\\LaravelShop\\": "src"
