@@ -11,7 +11,7 @@ $ composer require robertluowen/laravel-shop-wap-Member -vvv
 
 ## Usage
 
-TODO
+更新到1.0
 
 ## Contributing
 
