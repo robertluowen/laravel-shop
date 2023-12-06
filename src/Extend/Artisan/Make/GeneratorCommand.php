@@ -15,9 +15,30 @@ trait GeneratorCommand
         return "Robertluowen\LaravelShop";
     }
 
+    protected function replaceNamespace(&$stub, $name)
+    {
+        $searches = [
+            ['DummyNamespace', 'DummyRootNamespace', 'NamespacedDummyUserModel'],
+            ['{{ namespace }}', '{{ rootNamespace }}', '{{ namespacedUserModel }}'],
+            ['{{namespace}}', '{{rootNamespace}}', '{{namespacedUserModel}}'],
+        ];
+
+        foreach ($searches as $search) {
+            $stub = str_replace(
+                $search,
+                [$this->getNamespace($name), $this->rootNamespace() . '\\' . $this->getPackageInput() . '\\', $this->userProviderModel()],
+                $stub
+            );
+        }
+        return $this;
+    }
+
+
+
+    // 指定创建的文件默认地址
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace;
+        return  $rootNamespace.'\\'.$this->getPackageInput().$this->defaultNamespace;
     }
 
     protected function getPath($name)
@@ -28,6 +49,11 @@ trait GeneratorCommand
 
     }
 
+    //这是获取输入的组件的包目录
+    protected function getPackageInput()
+    {
+        return str_replace('/', '\\', trim($this->argument('package')));
+    }
 
     protected function getArguments(): array
     {
@@ -37,4 +63,5 @@ trait GeneratorCommand
 
         ];
     }
+
 }

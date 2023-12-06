@@ -10,22 +10,18 @@ class ControllerMakeCommand extends Command
 
     // trait 方法优先级大于继承
     protected $name = 'shop-make:controller';
-
     protected $description = '这是给laravel-shop创建控制器的';
 
-
-    public function getStub()
-    {
-        return __DIR__ . '/stubs/Controller.stub';
-    }
-
-    protected function getDefaultNamespace($rootNamespace)
-    {
-        return  $rootNamespace.'\\'.$this->getPackageInput().'\Http\Controllers';
-    }
+    protected $defaultNamespace = '\Http\Controllers';
 
 
-    protected function getPackageInput(){
-        return trim($this->argument('package'));
-    }
+    //php artisan shop-make:controller Data\Goods GoodsController
+
+
+
+
+
+
+
+
 }

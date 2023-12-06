@@ -3,13 +3,13 @@
 namespace Robertluowen\LaravelShop\Extend\Artisan\Make;
 
 
-use Illuminate\Console\GeneratorCommand;
+use Illuminate\Console\GeneratorCommand as Command;
 
-use Robertluowen\LaravelShop\Extend\Artisan\Make\GeneratorCommand as Command;
+use Robertluowen\LaravelShop\Extend\Artisan\Make\GeneratorCommand;
 
-class ClassMakeCommand extends GeneratorCommand
+class ClassMakeCommand extends Command
 {
-    use Command;
+    use GeneratorCommand;
 
     /**
      * The name and signature of the console command.
@@ -29,11 +29,15 @@ class ClassMakeCommand extends GeneratorCommand
     protected $type = 'Class';
 
 
+    //php artisan shop-make:class Extend\Artisan\Make\ModelMakeCommand
+
+
     public function getStub()
     {
         return __DIR__ . '/stubs/Class.stub';
     }
 
-    //php artisan shop-make:class Extend\Artisan\Make\ModelMakeCommand
+
+
 
 }
