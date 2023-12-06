@@ -1,6 +1,6 @@
 <?php
 /**************************************************************
- * File Name   : ShopServiceProvider.php
+ * File Name   : ArtisanServiceProvider.php
  * Author      : robert
  * Create Time : 2023-12-04 6:57
  * DESC        :
@@ -43,7 +43,7 @@ class ShopServiceProvider extends ServiceProvider
 //        $this->mergeConfigFrom(__DIR__ . '/../Config/shop.php', 'wap.shop');
         //注册中间件
 //        $this->registerRouteMiddleware();
-        //php artisan vendor:publish --provider="Robertluowen\LaravelShop\Wap\Shop\Providers\ShopServiceProvider"
+        //php artisan vendor:publish --provider="Robertluowen\LaravelShop\Wap\Shop\Providers\ArtisanServiceProvider"
         $this->registerPublishing();
 
 

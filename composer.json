@@ -11,6 +11,9 @@
     "require": {
     },
     "autoload": {
+        "files": [
+            "src/Wap/Shop/Support/helpers.php"
+        ],
         "psr-4": {
             "Robertluowen\\LaravelShop\\": "src"
         }

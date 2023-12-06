@@ -1,0 +1,18 @@
+{
+    "name": "robertluowen\/laravel-shop-wap-shop",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "robert",
+            "email": "757120778@qq.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Robertluowen\\LaravelShop\\Data\\Goods\\": ""
+        }
+    }
+}

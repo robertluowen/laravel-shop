@@ -1,0 +1,19 @@
+{
+    "name": "robertluowen\/laravel-shop-extend-artisan",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "robert",
+            "email": "757120778@qq.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Robertluowen\\LaravelShop\\Extend\\Artisan\\": ""
+        }
+    }
+}

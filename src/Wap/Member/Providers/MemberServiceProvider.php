@@ -45,7 +45,7 @@ class MemberServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../Config/member.php', 'wap.member');
         //注册中间件
         $this->registerRouteMiddleware();
-        // php artisan vendor:publish --provider=" Robertluowen\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
+        // php artisan vendor:publish --provider="Robertluowen\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
         $this->registerPublishing();
 
 
